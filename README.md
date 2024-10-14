@@ -3,9 +3,11 @@
 To Implement Transfer Learning for Horses_vs_humans dataset classification using InceptionV3 architecture.
 ## Problem Statement and Dataset
 ### https://laurencemoroney.com/datasets.html
-</br>
-</br>
-</br>
+
+This code implements a deep learning model using transfer learning by loading a pre-trained InceptionV3 model without its top layers and adapting it to classify images from the "Horse or Human" dataset. The model uses pre-trained weights for feature extraction, and further layers are added for the specific task. The dataset is augmented to introduce variability in training, and a custom callback function halts training when accuracy reaches 97%. The model is compiled with the RMSprop optimizer and binary cross-entropy loss function. Training and validation metrics are plotted to visualize performance improvement over epochs.
+
+![Screenshot 2024-10-14 105605](https://github.com/user-attachments/assets/be75f71e-cc78-4d05-b1df-6f10b3bfa9b9)
+
 
 ## DESIGN STEPS
 ### Step 1: Load and prepare image data for training and validation.
